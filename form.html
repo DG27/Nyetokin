@@ -4,27 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>signup</title>
 </head>
 <body>
-    <h3>
-        <strong align="right" style="color: #523EE8">Nyetokin .</strong><br>
-        <strong align="right" style="color: #C6C3DA">Nyetokin .</strong>
-    </h3>
+
 
 
 
     <form action="">
         <!-- coba ubah border jaadi 1 ketemu tata letaknya -->
-        <table border="0" style="border: "  align="center" cellpadding="2">
+        <table   align="center" cellpadding="10">
             <caption style="color: #C6C3DA">Signup ..</caption>
             <tr>
                 <!-- rowspan 6 karena menyatukan 6 baris -->
-                <td rowspan="6"> <img src="image.png" width="500" height="500" alt=""></td>
+                <td rowspan="6"> <img src="img/image.png" width="500" height="500" alt=""></td>
                 <td><strong>Fisrt name</strong>
                     <br>
                     <br>
-                    <input type="text" placeholder="first name ..">
+                    <input class="text" type="text" placeholder="first name ..">
                 </td>
                 
                 
@@ -34,7 +32,7 @@
                 <td><strong>Last name</strong>
                     <br>
                     <br>
-                    <input type="text" placeholder="Last name ..">
+                    <input class="text" type="text" placeholder="Last name ..">
                 </td>
                 
             </tr>
@@ -43,7 +41,7 @@
                 <td><strong>Username</strong>
                     <br>
                     <br>
-                    <input type="text" placeholder="Username ..">
+                    <input class="text" type="text" placeholder="Username ..">
                 </td>
                 
             </tr>
@@ -52,7 +50,7 @@
                 <td><strong>password</strong>
                     <br>
                     <br>
-                    <input type="password" placeholder="password ..">
+                    <input class="text" type="password" placeholder="password ..">
                 </td>
                 
             </tr>
@@ -73,8 +71,8 @@
                 <td><strong>what are you ?</strong>
                     <br>
                     <br>
-                    <select name="" id="">
-                        <option value="">chose</option>
+                    <select name="" id="" >
+                        <option selected="true" disabled="disabled">chose</option>
                         <option value="web design">web design</option>
                         <option value="creator">creator</option>
                         <option value="illustrator">illustrator</option>
@@ -85,8 +83,8 @@
             <tr>
               
                 <td colspan="2">
-                  <center><input type="submit" value="Set up your account">
-                    <input type="reset" value="cancel"></center>
+                  <center><input class="submit" type="submit" value="Set up">
+                    <input class="submit_reset" type="reset" value="cancel"></center>
                     
                 </td>
                 
@@ -94,6 +92,7 @@
             
         </table>
     </form>
+
 
 
 </body>
