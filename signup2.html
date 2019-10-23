@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<style>
+/* Create three equal columns that floats next to each other */
+.column_signup {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row_signup:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+<body>
+    <!-- navbar -->
+<div class="topnav">
+        <a href="index.html">NYETOKIN</a>
+        <a style="float:right" href="#">Pricing</a>
+        <a style="float:right" href="#">Sign in</a>
+        <a style="float:right" href="form.html">Join</a>
+        
+        <div class="search-container">
+    
+                <form action="/more.html">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+        
+          </div>
+          
+    
+    <!-- end navbar -->
+    <div class="row_signup">
+        <div class="column_signup">
+            <img src="img/image.png" width="100%" height="700px" alt="">
+        </div>
+        <div class="column_signup">
+            
+    <form action="">
+            <!-- coba ubah border jaadi 1 ketemu tata letaknya -->
+            <table width="80%" height="400px"  align="center" cellpadding="10">
+
+                <tr>
+                    <!-- <td rowspan="2"></td> -->
+                    <td><strong>Last name</strong>
+                        <br>
+                        <br>
+                        <input class="text" type="text" placeholder="Last name ..">
+                    </td>
+                    
+                </tr>
+                <tr>
+                  
+                    <td><strong>Username</strong>
+                        <br>
+                        <br>
+                        <input class="text" type="text" placeholder="Username ..">
+                    </td>
+                    
+                </tr>
+                <tr>
+                  
+                    <td><strong>date</strong>
+                        <br>
+                        <br>
+                        <input class="text" type="date" placeholder="Username ..">
+                    </td>
+                    
+                </tr>
+                <tr>
+                  
+                    <td><strong>gender</strong>
+                        <br>
+                        <br>
+                        male
+                        <input type="radio" name="gender" id="1" value="male">
+                        female
+                        <input type="radio" name="gender" id="0" value="female">
+                    </td>
+                    
+                </tr>
+                <tr>
+                  
+                    <td><strong>what are you ?</strong>
+                        <br>
+                        <br>
+                        <select name="" id="" >
+                            <option selected="true" disabled="disabled">chose</option>
+                            <option value="web design">web design</option>
+                            <option value="creator">creator</option>
+                            <option value="illustrator">illustrator</option>
+                        </select>
+                    </td>
+                    
+                </tr>
+                <tr>
+                  
+                    <td colspan="2">
+                      <center><input class="submit" type="submit" value="Set up">
+                        <input class="submit_reset" type="reset" value="cancel"></center>
+                        
+                    </td>
+                    
+                </tr>
+                
+            </table>
+        </form>
+        </div>
+
+    </div>
+    
+</body>
+</html>
