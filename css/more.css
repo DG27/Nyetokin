@@ -1,0 +1,94 @@
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    height: 570px;
+    margin-top: 151px;
+  border-radius: 10px;
+  
+  }
+  
+  /* Fake image */
+  .fakeimg,img {
+    width: 100%;
+    padding: 0;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .card_R{
+      border: 5px solid #F1EBEB;
+  box-sizing: border-box;
+  border-radius: 10px;
+    padding: 16px;
+    margin: 16px;
+    height: 500px;
+    
+  }
+  .card_R .submit_R{
+      margin-top: 100px;
+  }
+  
+  
+  
+  .card_R1{
+  
+  box-sizing: border-box;
+  border-radius: 10px;
+    padding: 16px;
+    margin: 16px;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .submit_R{
+      left: 20%;
+      background-color:#F84E4E;
+      border: none;
+      line-height: 5px;
+      font-size: 17px;
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 20px 15px ;
+      border-radius: 3px;
+      color: #fefbff;
+      font-weight: 100;
+      letter-spacing: 0.01em;
+      position: relative;
+  }
+  
+  
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
