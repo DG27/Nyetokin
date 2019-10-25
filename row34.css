@@ -1,0 +1,100 @@
+  /* content3 */
+  /* Create three equal columns that floats next to each other */
+  .column3 {
+    float: left;
+    width: 50%;
+    padding: 15px;
+  }
+  .column3 img{
+    margin-left: 100px;
+  }
+  .column3 h1{
+    line-height: 1.4%;
+    font-size: 67px;
+    text-indent: 30px;
+  }
+  .column3 p{
+    line-height: 1.4%;
+    font-size:36px;
+    text-indent: 30px;
+  }
+  
+  .column3 .edit,a {
+    text-decoration: none;
+    line-height: 118.4%;
+    font-size: 16px;
+    text-indent: 30px;
+  }
+  
+  
+  .column3 .desc3{
+    text-indent: 35px;
+  }
+  
+  /* Clear floats after the columns */
+  .row3:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column3 {
+      width: 100%;
+    }
+  }
+    /* content4 */
+  /* Create three equal columns that floats next to each other */
+  .column4 {
+    float: left;
+    width: 50%;
+    padding: 15px;
+  }
+  .column4 h1{
+    line-height: 1.4%;
+    font-size: 67px;
+    text-indent: 30px;
+  }
+  .column4 p{
+    line-height: 1.4%;
+    font-size:36px;
+    text-indent: 30px;
+  }
+  
+  .column4 .edit,a {
+    text-decoration: none;
+    line-height: 118.4%;
+    font-size: 16px;
+    text-indent: 30px;
+  }
+  
+  .column4 .edit:hover{
+    background-color: #b6cfdd;
+    line-height: 118.4%;
+    font-size: 16px;
+    text-indent: 30px;
+  }
+  
+  .column4 .desc{
+    text-indent: 35px;
+  }
+  
+  /* Clear floats after the columns */
+  .row4:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row4{
+    margin-top: 150px;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column4 {
+      width: 100%;
+    }
+  }
+
+    /* end content */

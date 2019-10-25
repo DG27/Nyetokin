@@ -1,0 +1,18 @@
+
+/* Footer */
+.footer{
+  background: #090808;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-top: 200px;
+  width: 100%;
+ 
+  color: white;
+  text-align: left;
+  text-indent: 120px;
+    }
+.footer ,input[type=submit]{
+  margin-top: 0;
+
+    }
