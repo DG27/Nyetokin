@@ -14,11 +14,11 @@
 <!-- navbar -->
 <div class="topnav">
     <a href="index.html">NYETOKIN</a>
-    <a style="float:right" href="#">Pricing</a>
+    <a style="float:right" href="#sip">Pricing</a>
     <a style="float:right" href="signup.html">Sign in</a>
     <a style="float:right" href="form.html">Join</a>
     <div class="search-container">
-    <form action="/more.html">
+    <form action="more.html">
               <input type="text" placeholder="Search.." name="search">
               <button type="submit"><i class="fa fa-search"></i></button>
             </form>
@@ -32,41 +32,50 @@
       <div class="row">
         <div class="leftcolumn">
           <div class="card">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Dec 7, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              <H2>Name your project</H2>
+              <input class="submit_text" type="text" name="" id="" placeholder="projek name">
           </div>
           <div class="card">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          </div>
-        </div>
-        <div class="rightcolumn">
-          <div class="card">
-            <h2>About Me</h2>
-            <div class="fakeimg" style="height:100px;">Image</div>
-            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-          </div>
-          <div class="card">
-            <h3>Popular Post</h3>
-            <div class="fakeimg"><p>Image</p></div>
-            <div class="fakeimg"><p>Image</p></div>
-            <div class="fakeimg"><p>Image</p></div>
+              <H2>What type of design do you need?</H2>
+              <select class="selecto"  name="" id="">
+                  <option value="asd" disabled="disabled" selected>select category</option>
+                        <optgroup label="Books">
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                          </optgroup>
+                          <optgroup label="Snippets">
+                            <option value="git">Git</option>
+                            <option value="java">Java</option>
+                          </optgroup>
+              </select>
           </div>
           <div class="card">
-            <h3>Follow Me</h3>
-            <p>Some text..</p>
+              <H2>Describe your project</H2>
+              <textarea class="textareao" cols="30" rows="5"></textarea>
           </div>
+          <div class="card">
+              <H2>How will your design be used?</H2>
+              <input class="submit_text" type="text" name="" id="" placeholder="projek name">
+          </div>
+          <div style="margin-bottom: 150px;" class="card">
+              <H2>Name your project</H2>
+              <div class="clearfix">
+                <div style="float: left;" class="dragarea">
+                      <i class="fa fa-plus fa-lg" ></i> 
+                </div>
+                <div style="float: left;"  class="dragarea">
+                    <i class="fa fa-plus fa-lg" ></i> 
+              </div>
+
+              </div>
+          </div>
+          
         </div>
       </div>
       
-      <div class="footer">
-        <h2>Footer</h2>
+      <div id="sip" class="footer">
+        <h2><img src="img/oppaaa.jpg"width="3%" height="5%" alt=""></h2>
+        <input style="float:right;" type="submit" value="next">
       </div>
       
 </body>
