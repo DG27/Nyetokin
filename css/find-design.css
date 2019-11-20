@@ -72,6 +72,13 @@
 .clearfix{
     overflow: auto;
 }
+.footer input{
+  float:right;
+  width: 100px;
+  height: 100px;
+  margin-top: -90px;
+  padding-top: -30px;
+}
 
 
 .leftcolumn {   

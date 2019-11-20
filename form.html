@@ -1,99 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <title>signup</title>
 </head>
+
 <body>
+    <!-- navbar -->
+    <div class="topnav">
+        <a href="index.html">NYETOKIN</a>
+        <a style="float:right" href="#">Pricing</a>
+        <a style="float:right" href="signup.html">Sign in</a>
+        <a style="float:right" href="form.html">Join</a>
+        <a href="find-design.html">Find-design</a>
+        <div class="search-container">
+            <form action="/more.html">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <!-- end navbar -->
 
 
 
-
-    <form action="">
+    <form action="" onsubmit="return validasi_input(this)">
         <!-- coba ubah border jaadi 1 ketemu tata letaknya -->
-        <table   align="center" cellpadding="10">
+        <table align="center" cellpadding="10">
             <caption style="color: #C6C3DA">Signup ..</caption>
             <tr>
                 <!-- rowspan 6 karena menyatukan 6 baris -->
                 <td rowspan="6"> <img src="img/image.png" width="500" height="500" alt=""></td>
-                <td><strong>Fisrt name</strong>
+                <td><strong>your brand</strong>
                     <br>
                     <br>
-                    <input class="text" type="text" placeholder="first name ..">
+                    <input class="text" type="text" placeholder="your brand ..">
                 </td>
-                
-                
+
+
             </tr>
             <tr>
                 <!-- <td rowspan="2"></td> -->
-                <td><strong>Last name</strong>
+                <td><strong>last job</strong>
                     <br>
                     <br>
-                    <input class="text" type="text" placeholder="Last name ..">
+                    <input class="text" type="text" placeholder="Last job ..">
                 </td>
-                
+
             </tr>
             <tr>
-              
-                <td><strong>Username</strong>
+
+                <td><strong>special in</strong>
                     <br>
                     <br>
-                    <input class="text" type="text" placeholder="Username ..">
+                    <input class="text" type="text" placeholder="special in ..">
                 </td>
-                
+
             </tr>
+
             <tr>
-              
-                <td><strong>password</strong>
-                    <br>
-                    <br>
-                    <input class="text" type="password" placeholder="password ..">
-                </td>
-                
-            </tr>
-            <tr>
-              
-                <td><strong>gender</strong>
-                    <br>
-                    <br>
-                    male
-                    <input type="radio" name="gender" id="1" value="male">
-                    female
-                    <input type="radio" name="gender" id="0" value="female">
-                </td>
-                
-            </tr>
-            <tr>
-              
+
                 <td><strong>what are you ?</strong>
                     <br>
                     <br>
-                    <select name="" id="" >
+                    <select name="" id="">
                         <option selected="true" disabled="disabled">chose</option>
                         <option value="web design">web design</option>
                         <option value="creator">creator</option>
                         <option value="illustrator">illustrator</option>
                     </select>
                 </td>
-                
+
             </tr>
             <tr>
-              
+
                 <td colspan="2">
-                  <center><input class="submit" type="submit" value="Set up">
-                    <input class="submit_reset" type="reset" value="cancel"></center>
-                    
+                    <center><input class="submit" type="submit" value="Set up">
+                        <input class="submit_reset" type="reset" value="cancel"></center>
+
                 </td>
-                
+
             </tr>
-            
+
         </table>
     </form>
 
+    <!-- javascript -->
+    <script type="text/javascript">
+        function validasi_input(form) {
 
+            //validasi radio button
+            function check_radio(radio) {
+                // memeriksa apakah radio button sudah ada yang dipilih
+                for (i = 0; i < radio.length; i++) {
+                    if (radio[i].checked === true) {
+                        return radio[i].value;
+                    }
+                }
+                return false;
+            }
+            var radio_val = check_radio(form.gender);
+            if (radio_val === false) {
+                alert("Anda belum memilih Jenis Kelamin!");
+                return false;
+            }
+            return (true);
+        }
+    </script>
 
 </body>
+
 </html>
